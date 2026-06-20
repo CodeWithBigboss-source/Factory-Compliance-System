@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "extracted_at": "2026-06-20T12:55:45.207Z",
+    "source_pdf": "compliance_policy.pdf",
+    "total_pages_parsed": 10,
+    "total_callout_blocks_found": 4,
+    "extraction_method": "regex_pass1",
+    "llm_verification": "skipped"
+  },
+  "rules": [
+    {
+      "class_id": 0,
+      "domain": "Pedestrian Movement",
+      "unsafe_behavior": "Safe Walkway Violation",
+      "safe_behavior": "Safe Walkway",
+      "observable_indicator": "Person positioned outside the green-marked Designated Safe Walkway boundaries",
+      "source_section": "Section 3",
+      "policy_callout_label": "WARNING",
+      "policy_callout_text": "kway. This is the most frequently occurring unsafe behavior documented at this facility. A Safe Walkway Violation is detected when a person's position in the video frame places them beyond the green walkway boundaries and into an area designated for machinery or vehicle operation. The Safe Walkway Violation is the highest-frequency unsafe behavior recorded at this facility. The frequency of this behavior reflects a tendency among personnel to treat minor deviations from the walkway as inconsequential. Any deviation from the green-marked boundaries places the individual in proximity to forklift and machinery hazards and will be treated as an unsafe behavior event requiring immediate response.",
+      "severity_signal": "Medium",
+      "source_page": 5,
+      "llm_verified": false
+    },
+    {
+      "class_id": 1,
+      "domain": "Equipment Interaction",
+      "unsafe_behavior": "Unauthorized Intervention",
+      "safe_behavior": "Authorized Intervention",
+      "observable_indicator": "Person interacting with equipment while not wearing the green authorization vest, or without required safety equipment",
+      "source_section": "Section 4",
+      "policy_callout_label": "CRITICAL SAFETY NOTICE",
+      "policy_callout_text": "teracting with or adjusting production equipment while not wearing the required safety equipment for the task. \u2022 A person intervening in a work situation at a production site without the observable indicators of authorization (i.e., the green vest). The green safety vest is the primary and most readily observable indicator of authorization status. Any person seen interacting with equipment who is not wearing the green vest must be assumed to be performing an Unauthorized Intervention. This classification applies regardless of the person's stated intent or role, since the vest system exists precisely to make authorization status unambiguous to observers and to the automated monitoring system.",
+      "severity_signal": "High_or_Critical",
+      "source_page": 6,
+      "llm_verified": false
+    },
+    {
+      "class_id": 2,
+      "domain": "Electrical Safety",
+      "unsafe_behavior": "Opened Panel Cover",
+      "safe_behavior": "Closed Panel Cover",
+      "observable_indicator": "Electrical panel cover observed in the open position during production operations",
+      "source_section": "Section 5",
+      "policy_callout_label": "WARNING",
+      "policy_callout_text": "te leaving of a panel cover open and the inadvertent forgetting to close a panel cover after accessing it. An Opened Panel Cover is detected when the surveillance system observes a panel in the open-cover state during production operations. The condition is an unsafe behavior event regardless of how long the panel has been open or whether personnel are in the immediate vicinity at the moment of detection. Leaving a panel cover open \u2014 even when doing so feels like a minor or temporary oversight \u2014 is classified as an unsafe behavior under this Manual. The automated detection system monitors panel cover status continuously and will generate an alert whenever an open-cover condition is observed.",
+      "severity_signal": "Medium",
+      "source_page": 7,
+      "llm_verified": false
+    },
+    {
+      "class_id": 3,
+      "domain": "Forklift Load Management",
+      "unsafe_behavior": "Carrying Overload with Forklift",
+      "safe_behavior": "Safe Carrying",
+      "observable_indicator": "Forklift observed carrying three (3) or more standardized blocks in a single load",
+      "source_section": "Section 6",
+      "policy_callout_label": "CRITICAL SAFETY NOTICE",
+      "policy_callout_text": "ed behavior for all forklift load operations within the facility. 6.3.2 Non-Compliant Behavior \u2014 Carrying Overload with Forklift Carrying Overload with Forklift is defined as operating a forklift while carrying three (3) or more standardized blocks in a single load. Three or more blocks on the forks during any phase of a load operation \u2014 including travel, maneuvering, and loading/unloading \u2014 constitutes an unsafe behavior event. The block count threshold is unambiguous: two blocks or fewer is safe; three blocks or more is an overload. Any observed forklift load of three or more standardized blocks will be treated as a Carrying Overload with Forklift event and will trigger an immediate alert.",
+      "severity_signal": "High_or_Critical",
+      "source_page": 8,
+      "llm_verified": false
+    }
+  ],
+  "raw_callouts": [
+    {
+      "page": 5,
+      "label": "WARNING",
+      "text": "kway. This is the most frequently occurring unsafe behavior documented at this facility. A Safe Walkway Violation is detected when a person's position in the video frame places them beyond the green walkway boundaries and into an area designated for machinery or vehicle operation. The Safe Walkway Violation is the highest-frequency unsafe behavior recorded at this facility. The frequency of this behavior reflects a tendency among personnel to treat minor deviations from the walkway as inconsequential. Any deviation from the green-marked boundaries places the individual in proximity to forklift and machinery hazards and will be treated as an unsafe behavior event requiring immediate response."
+    },
+    {
+      "page": 6,
+      "label": "CRITICAL SAFETY NOTICE",
+      "text": "teracting with or adjusting production equipment while not wearing the required safety equipment for the task. \u2022 A person intervening in a work situation at a production site without the observable indicators of authorization (i.e., the green vest). The green safety vest is the primary and most readily observable indicator of authorization status. Any person seen interacting with equipment who is not wearing the green vest must be assumed to be performing an Unauthorized Intervention. This classification applies regardless of the person's stated intent or role, since the vest system exists precisely to make authorization status unambiguous to observers and to the automated monitoring system."
+    },
+    {
+      "page": 7,
+      "label": "WARNING",
+      "text": "te leaving of a panel cover open and the inadvertent forgetting to close a panel cover after accessing it. An Opened Panel Cover is detected when the surveillance system observes a panel in the open-cover state during production operations. The condition is an unsafe behavior event regardless of how long the panel has been open or whether personnel are in the immediate vicinity at the moment of detection. Leaving a panel cover open \u2014 even when doing so feels like a minor or temporary oversight \u2014 is classified as an unsafe behavior under this Manual. The automated detection system monitors panel cover status continuously and will generate an alert whenever an open-cover condition is observed."
+    },
+    {
+      "page": 8,
+      "label": "CRITICAL SAFETY NOTICE",
+      "text": "ed behavior for all forklift load operations within the facility. 6.3.2 Non-Compliant Behavior \u2014 Carrying Overload with Forklift Carrying Overload with Forklift is defined as operating a forklift while carrying three (3) or more standardized blocks in a single load. Three or more blocks on the forks during any phase of a load operation \u2014 including travel, maneuvering, and loading/unloading \u2014 constitutes an unsafe behavior event. The block count threshold is unambiguous: two blocks or fewer is safe; three blocks or more is an overload. Any observed forklift load of three or more standardized blocks will be treated as a Carrying Overload with Forklift event and will trigger an immediate alert."
+    }
+  ]
+}
